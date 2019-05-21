@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameList</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="main__header">
+    <div class="container">
+      <h1>GameList</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Inicio">Inicio</a></li>
+          <li><a href="profile.html" title="Profile">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="gamePanel">
+    <form>
+      <label for="genre">Genero del juego:</label>
+        <select id="genre" name="genre">
+          <option value="0">Estrategia</option>
+          <option value="1">RPG</option>
+          <option value="2">Simulación</option>
+          <option value="3">Shooter</option>
+        </select>
+      <label for=name>Nombre del juego:</label>
+      <input type="text" id="name" name="name" required />
+      <input onclick="return clickGame()" id="formBut" class="button" type="submit" value="Enviar" />
+    </form>
+
+  </div>
+  <main id="main__content">
+    <div>
+      <button class="button" id="addButton">Añadir juego</button>
+    </div>
+    <div id="stratGames" class="games">
+      <h1>Estrategia</h1>
+      <ul>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/aoe2.png" alt="">
+          </figure>
+          <p>Age of Empires 2</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/civ.png" alt="">
+          </figure>
+          <p>Civilization IV</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/stell.png" alt="">
+          </figure>
+          <p>Stellaris</p>
+        </li>
+      </ul>
+    </div>
+    <div id="rpgGames" class="games">
+      <h1>RPG</h1>
+      <ul>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/ds.png" alt="">
+          </figure>
+          <p>Dark Souls</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/wow.png" alt="">
+          </figure>
+          <p>World of Warcraft</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/tw3.png" alt="">
+          </figure>
+          <p>The Witcher 3</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/poe.png" alt="">
+          </figure>
+          <p>Pillars of Eternity</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/sek.png" alt="">
+          </figure>
+          <p>Sekiro</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/tes5.png" alt="">
+          </figure>
+          <p>Skyrim</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/und.png" alt="">
+          </figure>
+          <p>Undertale</p>
+        </li>
+      </ul>
+    </div>
+    <div id="simGames" class="games">
+      <h1>Simulación</h1>
+      <ul>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/sims.png" alt="">
+          </figure>
+          <p>The Sims 4</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/kerb.png" alt="">
+          </figure>
+          <p>Kerbal Space Program</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/fh4.png" alt="">
+          </figure>
+          <p>Forza Horizon 4</p>
+        </li>
+      </ul>
+    </div>
+    <div id="shootGames" class="games">
+      <h1>Shooter</h1>
+      <ul>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/hl3.png" alt="">
+          </figure>
+          <p>Half-Life 2</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/doom.png" alt="">
+          </figure>
+          <p>DOOM</p>
+        </li>
+        <li>
+          <figure>
+            <a href="#">Añadir</a>
+            <img src="img/ow.png" alt="">
+          </figure>
+          <p>Overwatch</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer id="main__footer">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#" title="About">About</a></li>
+          <li><a href="#" title="Contact">Contact</a></li>
+          <li><a href="#" title="Support">Support</a></li>
+        </ul>
+      </nav>
+      <div class="footer__bottom">
+          <div>
+            <p>Copyright © 2019 <a href="https://twitter.com/Darak93" title="@Darak93">@Darak93</a>. All Rights Reserved.</p>
+          </div>
+          <div class="social">
+            <a href="#" title="Instagram"><img src="img/instagram.png" alt="Logo Instagram"></a>
+            <a href="#" title="Twitter"><img src="img/twitter.png" alt="Logo Twitter"></a>
+            <a href="#" title="Facebook"><img src="img/facebook.png" alt="Logo Facebook"></a>
+          </div>
+      </div>
+    </div>
+  </footer>
+  <script src="addGame.js"> </script>
+
+</body>
+</html>
